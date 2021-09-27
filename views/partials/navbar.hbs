@@ -1,0 +1,30 @@
+<nav>
+  <div class="nav-wrapper">
+    <a href="/" class="brand-logo">Work Shop</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      {{#if isHome}}
+        <li class="active"><a href="/">Bosh Sahifa</a></li>
+      {{else}}
+        <li><a href="/">Bosh Sahifa</a></li>
+      {{/if}}
+
+      {{#if isCars}}
+        <li class="active"><a href="/cars">Mavjud Ishlar</a></li>
+      {{else}}
+        <li><a href="/cars">Mavjud Ishlar</a></li>
+      {{/if}}
+
+      {{#if isAdd}}
+        <li class="active"><a href="/add">E'lon Berish</a></li>
+      {{else}}
+        <li><a href="/add">E'lon Berish</a></li>
+      {{/if}}
+
+      {{#if isCard}}
+        <li class="active"><a href="/card">Arxiv</a></li>
+      {{else}}
+        <li><a href="/card">Arxiv</a></li>
+      {{/if}}
+    </ul>
+  </div>
+</nav>

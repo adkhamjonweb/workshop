@@ -1,0 +1,32 @@
+<h1>Arxiv</h1>
+<div id="card">
+  {{#if cars.length}}
+    <table>
+      <thead>
+        <th>Models</th>
+        <th>Count</th>
+        <th>Action</th>
+      </thead>
+      <tbody>
+        {{#each cars}}
+          <tr>
+            <th>{{model}}</th>
+            <th>{{count}}</th>
+            <th>
+              <button
+                type="submit"
+                class="btn btn-small js-remove"
+                data-id="{{id}}"
+              >Delete</button>
+            </th>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+
+    <p><strong>Total price: </strong><span class="price">{{price}}</span></p>
+
+  {{else}}
+    <p class="arxivp"> Arxiv Bo'sh </p>
+  {{/if}}
+</div>

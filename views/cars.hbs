@@ -1,0 +1,30 @@
+<h1>Mavjud Ishlar Ro'yxati</h1>
+{{#if cars.length}}
+  {{! massiv }}
+    <div class="row">
+  {{#each cars}}
+      <div class="col s4 offset-s4">
+        <div class="card">
+          <div class="card-image">
+            <img src="{{img}}" />
+          </div>
+          <div class="card-content">
+            <span class="card-title">{{model}}</span>
+            <p class="price">{{price}}</p>
+          </div>
+          <div class="card-action action">
+            <a href="/cars/{{id}}" target="_blank">Batafsil</a>
+            <a href="/cars/{{id}}/edit?allow=true">Tahrirlash</a>
+
+            <form action="/card/add" method="POST">
+              <input type="hidden" name="id" value="{{id}}" />
+              <button class="btn btn-primary">Arxivlash</button>
+            </form>
+          </div>
+        </div>
+      </div>
+  {{/each}}
+    </div>
+{{else}}
+  <p>Car not found</p>
+{{/if}}

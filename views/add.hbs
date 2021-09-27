@@ -1,0 +1,28 @@
+<h1>E'lon Berish</h1>
+<form action="/add" method="POST">
+  <div class="row">
+    <div class="input-field col s12">
+      <input id="model" type="text" class="validate" required name="model" />
+      <label for="model">Ish Turi</label>
+      <span class="helper-text" data-error="Ish turini Yozing"></span>
+    </div>
+    <div class="input-field col s12">
+      <input
+        id="price"
+        type="number"
+        class="validate"
+        required
+        min="1"
+        name="price"
+      />
+      <label for="price">Maosh</label>
+      <span class="helper-text" data-error="Summani Yozing"></span>
+    </div>
+    <div class="input-field col s12">
+      <input id="img" type="text" class="validate" required name="img" />
+      <label for="img">Manzil Rasmi</label>
+      <span class="helper-text" data-error="Rasmni Yuklang"></span>
+    </div>
+    <button class="btn btn-primary">Saqlash</button>
+  </div>
+</form>

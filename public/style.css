@@ -1,0 +1,81 @@
+body{
+    background: #e7afaf;
+}
+input{
+    color: #fff;
+}
+.input-field>label{
+    color: black;
+}
+.nav-wrapper {
+    padding: 0 20px;
+    background: #636a94;
+}
+.row .col.offset-s4 {
+   margin-left: 0;
+   flex-direction: column;
+}
+label{
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+.price {
+    font-size: 26px;
+}
+.card .card-image img {
+height: 245px;
+}
+.card .card-action{
+    padding: 10px;
+    display: flex;
+    text-align: center;
+}
+.card .card-content {
+    padding: 12px;
+    border-radius: 0 0 2px 2px;
+}
+.car {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.price.big {
+    font-size: 40px;
+}
+
+.card-action.action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.arxivp{
+    font-size: 20px;
+    font-weight: 700;
+}
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating){
+    font-size: 11px;
+}
+.ota{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 190px;
+}
+.ota h2{
+    font-size: 28px;
+}
+span{
+    font-weight: 700;
+}
